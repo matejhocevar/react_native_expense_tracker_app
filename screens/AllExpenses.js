@@ -1,8 +1,10 @@
-import {StyleSheet, Text} from "react-native";
+import {StyleSheet} from "react-native";
+import ExpensesOutput from "../components/ExpensesOutput/ExpensesOutput";
+import DUMMY_EXPENSES from "../data/dummy_expenses";
 
 const AllExpensesScreen = () => {
   return (
-    <Text>All expenses screen</Text>
+    <ExpensesOutput expensesPeriod="Total" expenses={DUMMY_EXPENSES}/>
   );
 }
 
